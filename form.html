@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+  background:linear-gradient(to right, #78a7ba 0%, #385D6C 50%, #78a7ba 99%);
+}
+        tr th{
+            text-align: left;
+        }
+        .form {
+  font-family: "Roboto", sans-serif;
+  width:650px;
+  margin:30px auto;
+  background:linear-gradient(to right, #ffffff 0%, #fafafa 50%, #ffffff 99%);
+  border-radius: 10px;
+}
+
+.form-header  {
+  background-color: #EFF0F1;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.form-header h1 {
+  font-size: 30px;
+  text-align:center;
+  color:#666;
+  padding:20px 0;
+  border-bottom:1px solid #cccccc;
+}
+
+.form-body {
+  padding:10px 40px;
+  color:#666;
+}
+.form-footer  {
+  background-color: #EFF0F1;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding:10px 40px;
+  text-align: right;
+  border-top: 1px solid #cccccc;
+}
+.btn {
+   padding:10px 20px;
+   background-color: #1BBA93;
+   font-size:17px;
+   border:none;
+   border-radius:5px;
+   color:#bcf5e7;
+   cursor:pointer;
+}
+input[type="text"],input[type="password"],input[type="email"],input[type="range"],input[type="number"],select,textarea,input[type="file"] {
+    font-size: 17px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 34px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #333333;
+    text-align: left;
+    border: 1px solid #d6d6d6;
+    border-radius: 4px;
+    background: white;
+    outline: none;
+}
+table tr th:nth-child(2){
+    text-align: right;
+}
+.rigth input[type="text"],.rigth input[type="password"]{
+    position: relative;
+    right: -122px;
+}
+
+.rigth input[type="range"]{
+    position: relative;
+    right: -166px;
+}
+.rig{
+    position: relative;
+    right: -62px;
+}
+.rigth input[type="checkbox"]{
+    position: relative;
+    right: -181px;
+}
+input[type="email"]{
+            width: 550px;
+        }
+        textarea{
+            width: 550px;
+            height: 100px;
+        }
+        span{
+            position: relative;
+            right: -107px;
+        }
+        .hob
+        {
+            position: relative;
+            right: 45px;
+        }
+        .age{
+            position: relative;
+            left: -162px;
+        }
+        th{
+            color: #40b793;
+        }
+    </style>
+</head>
+<body>
+    <!-- creating form -->
+
+    <form class="form">
+
+        <!-- form-header -->
+
+<div class="form-header">
+
+    <h1>Create Account</h1>
+
+</div>
+
+<!-- form-body -->
+
+<div class="form-body">
+
+<table class="table">
+
+    <tr>
+        <th>First Name*</th>
+        <th>Last name</th>
+    </tr>
+    <tr>
+        <td><input type="text" placeholder="enter your first name"></td>
+        <td class="rigth"><input type="text" placeholder="enter your last name"></td>
+    </tr>
+</table>
+<table class="email"> 
+    <tr>
+<th>Email</th>
+    </tr>
+    <tr>
+        <td><input type="email" placeholder="enter your email"></td>
+    </tr>
+</table>
+<table class="password">
+
+    <tr>
+        <th>Password*</th>
+        <th class="rig">Confirm Password</th>
+    </tr>
+    <tr>
+        <td><input type="password" placeholder="enter your password"></td>
+        <td class="rigth"><input type="password" placeholder="confirm your password"></td>
+    </tr>
+</table>
+<table class="genter">
+    <tr>
+        <th>Gender</th>
+        <th class="hob">Hobbies</th>
+    </tr>
+
+    <tr>
+        <td> 
+            <input type="radio" name="Gender">Male
+            <input type="radio" name="Gender">Female
+        </td>
+
+        <td class="rigth">
+            <input type="checkbox" name="Hobbies"><span>
+
+                Music
+            </span> 
+                    <input type="checkbox" name="Hobbies">
+<span>
+
+    Sports
+</span>
+                    <input type="checkbox" name="Hobbies"> 
+                    <span>
+
+                        Travel
+                    </span>
+
+                    <input type="checkbox" name="Hobbies">
+                    <span>
+
+                        Movies
+                    </span>
+        </td>
+    </tr>
+</table>
+<table class="income">
+
+    <tr>
+        <th>source of income</th>
+        <th>income</th>
+    </tr>
+
+    <tr>
+        <td>
+            <select>
+                <option>Select</option>
+                <option>Employed</option>
+                <option>Unemployed</option>
+                <option>Self Employed</option>
+                <option>Fresher</option>
+            </select>
+        </td>
+
+        <td class="rigth">
+            <input type="range" min="20" max="200">
+        </td>
+    </tr>
+
+
+</table>
+
+
+<table class="upload">
+
+    <tr>
+        <th>upload profile picture</th>
+        <th class="age"> Age</th>
+    </tr>
+
+    <tr>
+        <td><input type="file"></td>
+        <td > <input type="number"></td>
+    </tr>
+</table>
+
+<table class="bio">
+    <tr>
+        <th>
+            Bio
+        </th>
+    </tr>
+
+    <tr>
+        <td>
+            <textarea name="Bio" id="" cols="30" rows="10"></textarea>
+        </td>
+    </tr>
+</table>
+</div>
+
+<!-- form-footer -->
+
+<div class="form-footer">
+<button class="btn">
+    Create
+</button>
+</div>
+
+    </form>
+</body>
+</html>
